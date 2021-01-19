@@ -14,3 +14,13 @@ var firebaseConfig = {
             }
           );
   });
+  firebase.database().ref('gifflar').orderByChild("pris").once('value',function(snapshot){
+    console.log(snapshot.val());
+          snapshot.forEach(
+            function(ChildSnapshot){
+                let sted = ChildSnapshot.val().sted;
+                let pris = ChildSnapshot.val().pris;
+               $("#gifflarlist").append("<tr><td>" + sted + "</td><td>" + pris + "</td></tr>");
+            }
+          );
+  });
