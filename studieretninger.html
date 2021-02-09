@@ -5,20 +5,89 @@
 <title>Studieretninger</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+<script src="https://kit.fontawesome.com/0160c32060.js" crossorigin="anonymous"></script>
 </head>
 <header>
-  <div class="buttons">
-  <button class="headerbutton" title="Forside" onclick="window.open('https://informatik.head9x.dk/ny-elev', '_self');">Forside</button>
-  <button class="headerbutton" title="Faciliteter" onclick="window.open('/ny-elev/faciliteter.html', '_self');">Faciliteter</button>
-  <button class="headerbutton" title="Monster" onclick="window.open('/ny-elev/monster.html', '_self');">Monster</button>
-  <button class="headerbutton" title="Her går du" onclick="window.open('/ny-elev/hergaardu.html', '_self');">Her går du</button>
-  <button class="headerbutton" title="Studieliv og traditioner" onclick="window.open('/ny-elev/studielivogtraditioner.html', '_self');">Studieliv og traditioner</button>
-  <br /><br /><br />
-</div>
+  <div class="topnav">
+    <a href="https://informatik.head9x.dk/ny-elev/" class="active">Forside</a>
+    <div id="myLinks">
+    <a href="https://informatik.head9x.dk/ny-elev/faciliteter.html">Faciliteter</a>
+    <a href="https://informatik.head9x.dk/ny-elev/studieretninger.html">Studieretninger</a>
+    <a href="https://informatik.head9x.dk/ny-elev/monster.html">Monster</a>
+    <a href="https://informatik.head9x.dk/ny-elev/hergaardu.html">Stedet</a>
+    <a href="https://informatik.head9x.dk/ny-elev/studielivogtraditioner.html">Studieliv og Traditioner</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+    </a>
+    </div>
+
+    <a href="#scikem" class="ahref">Science Kemi</a>
+    <a href="#matfys" class="ahref">Science Fysik</a>
+    <a href="#bioinf" class="ahref">Bioinformatik</a>
+    <a href="#" class="ahref"></a>
+    <a href="#" class="ahref"></a>
 </header>
 <body>
 
+
+
+
+
+  <section class="box">
+    <table class="content-table">
+      <thead>
+        <tr><th>Science Kemi:</th></tr>
+      </thead>
+        <tbody id=scikem>
+          <tr><td>Science kemi er studieretiningen hvor du har matematik på højt niveau og fysik fylder meget af skemaet. du er vild med natur og mennesker vil du passe godt ind på en af de biokemiske studieretningner. Her undersøges der hvordan vores verden fungere fra molekyler og mikroorganismer til mennesker og vores miljø.</td></tr> 
+          <tr><td>Studieretningerne ruster til bl.a de naturvidenskabelige univerisetudannelser og der er mulighed for en fremtid som tandlæge, bioanalytiker, sygeaplejerske og fysioterapeut.</td></tr>
+          <tr><td>Studieretning Matematik A - Kemi A</td></tr>
+        </tbody>      
+    </table>
+  </section>
+
+  <section class="box">
+    <table class="content-table">
+      <thead>
+        <tr><th>Science Fysik:</th></tr>
+      </thead>
+        <tbody id=matfys>
+          <tr><td>Kan du godt lide matematik og fysik på højt niveau så er Science lige noget for dig!</td></tr> 
+          <tr><td>Her arbejder du med teori og beregninger og har samtidig fokus på eksperimentel fysik hvor du opstiller og tester hypoteser i vores laboratorier.</td></tr>
+          <tr><td>Science vil passe dig godt hvis du kan lide formler, facts og forsøg og vil forstå hvordan vores univers fungerer. Med Scienece kan du få muligheden for at læse videre på de naturvidenskabelige uddanelser på universiteterne f.eks DTU eller KU. Du vil måske være ingeniør, læge eller fysiker</td></tr>
+          <tr><td>Studieretning: Matematik A - Fysik A</td></tr>
+      </tbody>      
+    </table>
+  </section>
+
+  <section class="box">
+    <table class="content-table">
+      <thead>
+        <tr><th>Bioinformatik:</th></tr>
+      </thead>
+        <tbody id=bioinf>
+          <tr><td>Bioinformatik er en studieretning hvor du har matematik på højt niveau og biologi fylder meget i skemaet. Hvis du interesserer dig for natur og mennesker vil du passe godt ind på en af de biokemiske studieretninger. Her undersøger du hvordan verden fungere fra molekyler til mikroorganismer til menneske og miljø.</td></tr> 
+          <tr><td>Studieretninger lærer dig bl.a. naturvidenskabelige, universitetuddanelser, og det kan også være du har en fremtid som tandlæge, bioanalytiker, sygeplejesker eller fysyioterapeut.</td></tr>
+          <tr><td>Studieretningsfag: Matematik A -Biologi B</td></tr>
+      </tbody>      
+    </table>
+  </section>
+
+
+
 </body>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>  function addDarkmodeWidget() { new Darkmode().showWidget(); } window.addEventListener('load', addDarkmodeWidget);</script>
 </html>

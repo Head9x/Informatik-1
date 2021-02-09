@@ -5,20 +5,60 @@
 <title>Studieliv og traditioner</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+<script src="https://kit.fontawesome.com/0160c32060.js" crossorigin="anonymous"></script>
 </head>
 <header>
-  <div class="buttons">
-  <button class="headerbutton" title="Forside" onclick="window.open('https://informatik.head9x.dk/ny-elev', '_self');">Forside</button>
-  <button class="headerbutton" title="Faciliteter" onclick="window.open('/ny-elev/faciliteter.html', '_self');">Faciliteter</button>
-  <button class="headerbutton" title="Studieretninger" onclick="window.open('/ny-elev/studieretninger.html', '_self');">Studieretninger</button>
-  <button class="headerbutton" title="Monster" onclick="window.open('/ny-elev/monster.html', '_self');">Monster</button>
-  <button class="headerbutton" title="Her går du" onclick="window.open('/ny-elev/hergaardu.html', '_self');">Her går du</button>
-  <br /><br /><br />
-</div>
+  <div class="topnav">
+    <a href="https://informatik.head9x.dk/ny-elev/" class="active">Forside</a>
+    <div id="myLinks">
+    <a href="https://informatik.head9x.dk/ny-elev/faciliteter.html">Faciliteter</a>
+    <a href="https://informatik.head9x.dk/ny-elev/studieretninger.html">Studieretninger</a>
+    <a href="https://informatik.head9x.dk/ny-elev/monster.html">Monster</a>
+    <a href="https://informatik.head9x.dk/ny-elev/hergaardu.html">Stedet</a>
+    <a href="https://informatik.head9x.dk/ny-elev/studielivogtraditioner.html">Studieliv og Traditioner</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+    </a>
+    </div>
 </header>
+<body>
+  <br>
+  <h2>Hvad er HTX:</h2>
+  <p style="padding: 8px; font-weight: 80;">
+  HTX - det tekniske gymnasium forbereder dig på at læse videre på en række lange og mellemlange videregående uddannelser. Det kunne være fx på DTU, ITU, KU, AAU eller akademiuddannelserne.<br>
+  På htx fylder naturvidenskabelige, tekniske og kommunikationsorienterede fag meget og alt efter den valgte studieretning, vil uddannelsen blive formet inden for ét af disse tre hovedområder.<br>
+  Som elev arbejder du projektorienteret, kreativt og eksperimenterende med idéer, der kan blive til virkelighed. Der kombinereres teori med praksisnær hands on undervisning i moderne laboratorier og værksteder.<br>
+  Det er ikke langt fra praksis til virkelighed, hvis du drømmer om at gøre din hobby til din levevej.<br></p>
+  <br>
+
+  <h2>FAQ:</h2>
+  <br>
+  <h3>Uddannelsens opbygning:</h3>
+  <p style="padding: 8px; font-weight: 80;">
+    Både htx, hhx, og stx er bygget op på samme måde. Uddannelsen begynder med et grundforløb på tre måneder, der er fælles for alle elever.
+
+    På grundforløbet vil du stifte bekendtskab med skolens værksteder og laboratorier. Den viden får du rigtig god brug for senere i uddannelsen, når du skal føre dine idéer ud i praksis. Ideen med grundforløbet er at introducere dig til den særlige undervisning og pædagogik, som htx anvender.
+    
+    I resten af den 3-årige uddannelse følger du den studieretning, du har valgt. Forskellene ligger i, hvilke obligatoriske fag der kræves, og hvilke studieretninger der udbydes.
+  </p>
+
+
+
 
 
 </body>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>  function addDarkmodeWidget() { new Darkmode().showWidget(); } window.addEventListener('load', addDarkmodeWidget);</script>
 </html>
