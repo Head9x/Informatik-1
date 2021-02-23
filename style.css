@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+.box2{
+text-align: left;
+width: 100%;
+}
 .ahref {
     background-color: #046664; /* Greenish blue */
     border: 1px solid black;
@@ -51,7 +55,10 @@
 .box{
 float: left;
 width: 50%;
-
+}
+.box2{
+float: left;
+width: 100%;
 }
 .content-table {
 border-collapse: collapse;
@@ -66,6 +73,10 @@ min-width: 300px;
 float: left;
 width: 50%;
 }
+.box2{
+float: left;
+width: 100%;
+}
 .content-table {
 border-collapse: collapse;
 margin: 25px 0;
@@ -78,6 +89,10 @@ min-width: 400px;
 .box{
     margin-left: 7%;
     width: 40%;
+}
+.box2{
+float: left;
+width: 100%;
 }
 .content-table {
 border-collapse: collapse;
