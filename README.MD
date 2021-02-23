@@ -1,1 +1,1 @@
-This project has noe been published to GitHub. It should not be copied from, but inspiration seeking is fine. The text on the pages is unfortunately only in danish and will not be translated to english (for now at least)
+This project has now been published to GitHub. It should not be copied from, but inspiration seeking is fine. The text on the pages is unfortunately only in danish and will not be translated to english (maybe I'll translate it in the future)
