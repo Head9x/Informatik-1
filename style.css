@@ -32,7 +32,7 @@ width: 100%;
     min-height: 350px;
 }
 .content-table thead tr {
-    background-color: #009879;
+    background-color: #4B6CE2;
     color: #ffffff;
     text-align: left;
 }
@@ -42,12 +42,13 @@ width: 100%;
 }
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
-}
-.content-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #fafafa;
+}
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #4B6CE2;
 }
 
 @media only screen and (min-width: 768px) {
